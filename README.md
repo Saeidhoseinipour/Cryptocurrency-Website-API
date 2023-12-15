@@ -10,21 +10,32 @@
 ```python
 import requests
 
-# Replace the URL with the specific API endpoint you want to access
-api_url = "https://api.example.com/data"
+# List of cryptocurrency-related website URLs
+crypto_websites = [
+    "https://www.coindesk.com/",
+    "https://coinmarketcap.com/",
+    "https://cointelegraph.com/",
+    # ... add more URLs here
+]
 
-# Specify any required headers or parameters
+# Common headers or parameters for all requests
 headers = {"Authorization": "Bearer YOUR_API_KEY"}
 params = {"param1": "value1", "param2": "value2"}
 
-# Make a GET request
-response = requests.get(api_url, headers=headers, params=params)
+for url in crypto_websites:
+    try:
+        # Make a GET request
+        response = requests.get(url, headers=headers, params=params)
 
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    data = response.json()  # Parse JSON response
-    print(data)
-else:
-    print(f"Error: {response.status_code} - {response.text}")
+        # Check if the request was successful (status code 200)
+        if response.status_code == 200:
+            data = response.json()  # Parse JSON response
+            print(f"Data from {url}: {data}")
+        else:
+            print(f"Error for {url}: {response.status_code} - {response.text}")
+
+    except Exception as e:
+        print(f"Error for {url}: {e}")
+
 
 ```
