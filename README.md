@@ -2,6 +2,24 @@
 
 
 
+| Task Description             | Progress |
+| ---------------------------- | -------- |
+| Define project objectives    | 10%      |
+| Research relevant APIs       | 20%      |
+| Choose cryptocurrency APIs   | 30%      |
+| Set up development environment| 40%      |
+| Implement API integration    | 50%      |
+| Test API functionality       | 60%      |
+| Extract sample text datasets | 70%      |
+| Preprocess text data         | 80%      |
+| Implement co-clustering algo | 90%      |
+| Test co-clustering results   | 95%      |
+| Document project              | 100%     |
+| Finalize and submit project   | 100%     |
+
+
+
+
 | No. | Website                                  | URL                                                  |
 |-----|------------------------------------------|------------------------------------------------------|
 | 1   | CoinDesk                                 | [https://www.coindesk.com/](https://www.coindesk.com/)              |
