@@ -19,6 +19,19 @@
 
 
 
+| Task Description                  | Progress | Code                                                    |
+| --------------------------------- | -------- | ------------------------------------------------------- |
+| Request Data from API             | Done     | `response = requests.get(api_url)`                      |
+| Text Preprocessing                | Done     | ```python\nwords = word_tokenize(text)\n```            |
+| - Tokenization                    | Done     | ```python\nwords = word_tokenize(text)\n```            |
+| - Stopword Removal                | Done     | ```python\nwords = [ps.stem(word) for word in words if word.isalpha() and word not in stop_words]\n``` |
+| - Stemming                        | Done     | ```python\nps = PorterStemmer()\n```                    |
+| Create Document-Term Matrix       | Done     | ```python\ndtm = vectorizer.fit_transform(preprocessed_data)\n``` |
+| - Using CountVectorizer           | Done     | ```python\nvectorizer = CountVectorizer()\n```          |
+| - Document-Term Matrix (dense)    | Done     | ```python\ndtm_dense = dtm.todense()\n```                |
+
+
+
 
 | No. | Website                                  | URL                                                  |
 |-----|------------------------------------------|------------------------------------------------------|
